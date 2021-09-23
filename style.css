@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(70, 76, 102, 0.7),rgba(70, 76, 102, 0.7)), url(https://imaa-institute.org/wp-content/uploads/2006/01/Pharmaceutical-Sector-MA-Insights-2005-2006.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    font-size: x-large;
+    color:rgb(199, 30, 157);
+    padding: 1.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+width: 100%
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: auto;
+}
+.dealers-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: auto;
+}
+
+/*----- testimonial -----*/
+
+.testimonial{
+    width: 100%;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial img{
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
